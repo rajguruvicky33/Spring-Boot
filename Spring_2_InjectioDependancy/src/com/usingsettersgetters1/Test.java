@@ -9,7 +9,7 @@ public class Test {
 		ApplicationContext apc= new ClassPathXmlApplicationContext("com/usingsettersgetters1/NewFile.xml");
 		
 		Product product = apc.getBean("p" , Product.class);
-		
+		System.out.println("--------------");
 		System.out.println(product.getpId());
 		System.out.println(product.getpName());
 		System.out.println(product.getpCost());
